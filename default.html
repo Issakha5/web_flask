@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html >
+	<head>
+		<meta charset="UTF-8">	
+		<title>flask_web</title>
+		
+
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/app.css')}}">
+	</head>
+	<body>
+		{% include 'partials/_nav.html'%}
+		{% block body %} {% endblock %}
+
+	</body>
+</html>
